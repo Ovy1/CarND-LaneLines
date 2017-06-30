@@ -13,15 +13,14 @@ This project implements a pipeline to process an image or video of a car driving
 
 The pipeline consist of 5 steps:
 
-a) convert the images to grayscale,
-b) Apply Gaussian smoothing function
-c) Apply Canny Edge Detector function
-d) Created masked edges for ROI (region of interest)
-e) Apply Hough Line Detector function
-f) Draw lane lines on the original image
+a) converting the images to grayscale,
+b) Applying Gaussian smoothing function
+c) Applying Canny Edge Detector function
+d) Creating masked edges for ROI (region of interest)
+e) Applying Hough Line Detector function
+f) Drawing lane lines on the original image
 In order to draw a single line on the left and right lanes, I modified the
 draw_lines() function by using linear regression on candidate right/left lane line
-segment endpoints, to create right/left lane line equations. From these
-equations, draw right/left lane lines on the image.
+segment endpoints, to create right/left lane line equations. 
 
 
